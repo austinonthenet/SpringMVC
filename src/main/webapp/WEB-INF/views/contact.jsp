@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>Delhoyo Webapp</title>
+	<title>Resmy's Online Exam Application</title>
 	<!-- META JS and CSS -->
 	<%@ include file="/WEB-INF/views/common/metajscss.jsp"%>
 

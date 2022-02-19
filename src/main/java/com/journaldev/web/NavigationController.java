@@ -51,9 +51,9 @@ public class NavigationController {
 
 	}
 	
-	@RequestMapping(value = "/cv", method = RequestMethod.GET)
+	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String cv(Model model) {
-		return "cv";
+		return "home";
 
 	}
 
