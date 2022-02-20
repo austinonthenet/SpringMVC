@@ -22,11 +22,13 @@
     <div class="container">
 
         <!-- Content Row -->
-        <div class="card h-100">
+        <div class="mb-4 mt-4">
+                <div class="card">
                     <h4 class="card-header">Enter The Test Details</h4>
-                    <div class="card-body">
+                    
                         <form:form method="POST" 
 				          action="/online-exam-app/tests/submit" modelAttribute="testForm">
+				          <div class="card-body">
 				             <table>
 				                <tr>
 				                    <td><form:label path="name">Name</form:label></td>
@@ -36,14 +38,18 @@
 				                    <td><form:label path="description">Description</form:label></td>
 				                    <td><form:input path="description"/></td>
 				                </tr>
-				                
-				                <tr>
-				                    <td><input type="submit" value="Submit" class="btn btn-primary"/></td>
-				                </tr>
 				            </table>
+				            </div>	
+				            <div class="card-footer">
+					            <table>
+					                <tr>
+					                    <td><input type="submit" value="Submit" class="btn btn-primary"/></td>
+				                    </tr>
+			                    </table>
+				            </div>
 				        </form:form>
-                    </div>
-                    
+                                        
+		        </div>
         </div>
         <!-- /.row -->
         
