@@ -21,6 +21,18 @@ public class Test {
 	private int passingScore;
 	private int timeLimitMins;
 	private int questionsLimit;
+	
+	public Test(long id, String name, String description, int category, int timeLimit, int questionsCount, Date createdOn, int passingScore) {
+		this.testId = id;
+		this.testName = name;
+		this.description = description;
+		this.categoryId = 1;
+		this.timeLimitMins = timeLimit;
+		this.questionsLimit = questionsCount;
+		this.passingScore = passingScore;
+		this.dateCreated = createdOn;
+	}
+	
 	public long getTestId() {
 		return testId;
 	}
