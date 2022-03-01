@@ -7,14 +7,14 @@ DROP TABLE IF EXISTS answers;
 CREATE TABLE test_categories(
 	category_id SERIAL PRIMARY KEY,
 	category_name VARCHAR(50),
-	deccription VARCHAR(200)
+	description VARCHAR(200)
 	
 );
 
 CREATE TABLE tests (
     test_id SERIAL PRIMARY KEY,
     name VARCHAR(50) not null,
-    deccription VARCHAR(200),
+    description VARCHAR(200),
     category_id int,
     date_created TIMESTAMP,
     passing_score int,

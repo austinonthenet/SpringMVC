@@ -22,7 +22,7 @@
 	</beans:bean>
 	
 	<!-- Entity Manager for persons -->
-	<beans:bean id="personManager" class="com.journaldev.service.SimplePersonManager"></beans:bean>
+	<beans:bean id="testManager" class="com.journaldev.service.SimpleTestManager"></beans:bean>
 	
 	<context:component-scan base-package="com.journaldev.web" />
 	

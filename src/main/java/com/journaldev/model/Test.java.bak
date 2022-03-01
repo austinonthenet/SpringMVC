@@ -52,68 +52,84 @@ public class Test {
 	public Test() {
 
 	}
-	
-	public Test(long id, String testName, String description, int category, int timeLimit, int questionsCount, Date createdOn, int passingScore) {
-		this.testId = id;
-		this.testName = testName;
+
+	public Test(String name, String description, int categoryId, Date dateCreated, int passingScore, int timeLimitMins,
+			int questionsLimit) {
+		this.testName = name;
 		this.description = description;
-		this.categoryId = 1;
-		this.timeLimitMins = timeLimit;
-		this.questionsLimit = questionsCount;
+		this.categoryId = categoryId;
+		this.dateCreated = dateCreated;
 		this.passingScore = passingScore;
-		this.dateCreated = createdOn;
+		this.timeLimitMins = timeLimitMins;
+		this.questionsLimit = questionsLimit;
 	}
-	
+
 	public long getTestId() {
 		return testId;
 	}
+
 	public void setTestId(long testId) {
 		this.testId = testId;
 	}
+
 	public String getTestName() {
 		return testName;
 	}
+
 	public void setTestName(String testName) {
 		this.testName = testName;
 	}
+
 	public String getDescription() {
 		return description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
 	public int getCategoryId() {
 		return categoryId;
 	}
+
 	public void setCategoryId(int categoryId) {
 		this.categoryId = categoryId;
 	}
+
 	public Date getDateCreated() {
 		return dateCreated;
 	}
+
 	public void setDateCreated(Date dateCreated) {
 		this.dateCreated = dateCreated;
 	}
+
 	public int getPassingScore() {
 		return passingScore;
 	}
+
 	public void setPassingScore(int passingScore) {
 		this.passingScore = passingScore;
 	}
+
 	public int getTimeLimitMins() {
 		return timeLimitMins;
 	}
+
 	public void setTimeLimitMins(int timeLimitMins) {
 		this.timeLimitMins = timeLimitMins;
 	}
+
 	public int getQuestionsLimit() {
 		return questionsLimit;
 	}
+
 	public void setQuestionsLimit(int questionsLimit) {
 		this.questionsLimit = questionsLimit;
 	}
 	
-	
-	
+	public String toSring(){
+		return "Test id: " + this.testId + ". Test Name: " + this.testName + ". Category Id: " + "" + this.categoryId;
+	}
 
 }

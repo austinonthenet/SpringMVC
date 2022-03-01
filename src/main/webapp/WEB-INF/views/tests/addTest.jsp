@@ -31,12 +31,28 @@
 				          <div class="card-body">
 				             <table>
 				                <tr>
-				                    <td><form:label path="name">Name</form:label></td>
-				                    <td><form:input path="name"/></td>
+				                    <td><form:label path="testName">Name</form:label></td>
+				                    <td><form:input path="testName"/></td>
 				                </tr>
 				                <tr>
 				                    <td><form:label path="description">Description</form:label></td>
 				                    <td><form:input path="description"/></td>
+				                </tr>
+				                <tr>
+				                    <td><form:label path="categoryId">categoryId</form:label></td>
+				                    <td><form:input path="categoryId"/></td>
+				                </tr>
+				                <tr>
+				                    <td><form:label path="passingScore">passingScore</form:label></td>
+				                    <td><form:input path="passingScore"/></td>
+				                </tr>
+				                <tr>
+				                    <td><form:label path="timeLimitMins">timeLimitMins</form:label></td>
+				                    <td><form:input path="timeLimitMins"/></td>
+				                </tr>
+				                <tr>
+				                    <td><form:label path="questionsLimit">questionsLimit</form:label></td>
+				                    <td><form:input path="questionsLimit"/></td>
 				                </tr>
 				            </table>
 				            </div>	

@@ -32,10 +32,10 @@
 				</tr>
 				<c:forEach items="${Tests}" var="test" varStatus="tagStatus">
 				  <tr>
-				    <td>${test.name}</td>
-				    <td>${test.category}</td>
-				    <td>${test.questionsCount}</td>
-				    <td>${test.timeLimit}</td>
+				    <td>${test.testName}</td>
+				    <td>${test.categoryId}</td>
+				    <td>${test.questionsLimit}</td>
+				    <td>${test.timeLimitMins}</td>
 				    <td>${test.passingScore}</td>
 				  </tr>
 				</c:forEach>
