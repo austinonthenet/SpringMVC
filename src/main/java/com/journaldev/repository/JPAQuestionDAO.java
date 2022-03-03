@@ -56,4 +56,16 @@ public class JPAQuestionDAO implements QuestionDAO {
 		return em.createQuery(s).getResultList();
 	}
 
+	@Override
+	public long updateQuestion(Question question) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void deleteQuestion(long questionId) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

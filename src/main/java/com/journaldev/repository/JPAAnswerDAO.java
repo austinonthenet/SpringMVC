@@ -27,7 +27,7 @@ public class JPAAnswerDAO implements AnswerDAO {
 
 	@Override
 	@Transactional(readOnly = false)
-	public long createTest(Answer answer) {
+	public long createAnswer(Answer answer) {
 		em.persist(answer);
 		em.flush();
 		return answer.getAnswerId();
@@ -55,6 +55,20 @@ public class JPAAnswerDAO implements AnswerDAO {
 	public List<Answer> getAllAnswers() {
 		String s = "SELECT a FROM Answer a ";
 		return em.createQuery(s).getResultList();
+	}
+
+
+	@Override
+	public long updateAnswer(Answer answer) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public void deleteAnswer(long answerId) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
